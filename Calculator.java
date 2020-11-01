@@ -14,7 +14,7 @@ public class Calculator extends JFrame {
 	private JPanel panel6 = new JPanel();
 	private JPanel panel7 = new JPanel();
 	private Font inputFont = new Font("Courier",Font.BOLD,20);
-	private JButton clrbtn = new JButton("CLEAR");
+	private JButton btnclr = new JButton("CLEAR");
 	
 	Calculator(){
 		
@@ -34,7 +34,7 @@ public class Calculator extends JFrame {
 		screen.setHorizontalAlignment(SwingConstants.RIGHT);
 		
 		
-		clrbtn.addActionListener(new ActionListener() {
+		btnclr.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				screen.setText("");
 				Controls.answer = "";
@@ -51,7 +51,7 @@ public class Calculator extends JFrame {
 		this.add(panel2,BorderLayout.LINE_START);
 		this.add(control,BorderLayout.CENTER);
 		this.add(panel3,BorderLayout.LINE_END);
-		this.add(clrbtn,BorderLayout.SOUTH);
+		this.add(btnclr,BorderLayout.SOUTH);
 	}
 
 	public static void main(String[] args) {
